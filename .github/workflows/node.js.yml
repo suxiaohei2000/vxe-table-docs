@@ -9,7 +9,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: cd v3
+      - run: cd v3 && ls
       - run: npm install -g vue-cli
       - run: npm run build
     

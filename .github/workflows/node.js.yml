@@ -10,6 +10,6 @@ jobs:
         with:
           node-version: '14'
       - run: cd v3 && ls
-      - run: npm install -g vue-cli
+      - run: npm install -g vue-cli && npm install
       - run: npm run build
     

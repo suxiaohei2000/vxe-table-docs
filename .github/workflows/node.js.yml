@@ -10,8 +10,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm install -g @vue/cli
-      - run: npm install -g @vue/cli-service
-      - run: npm install @vue/cli-plugin-babel @vue/cli-plugin-eslint @vue/cli-plugin-typescript
+      - run: npm install @vue/cli-service @vue/cli-plugin-babel @vue/cli-plugin-eslint @vue/cli-plugin-typescript
       - run: npm install 
       - run: npm run build:v3
     

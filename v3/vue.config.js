@@ -13,6 +13,7 @@ if (process.env.NODE_ENV === 'production') {
 process.env.VUE_APP_DATE_NOW = Date.now()
 
 module.exports = defineConfig({
+  parallel: false,
   publicPath,
   assetsDir: 'static',
   productionSourceMap: false,

@@ -1,8 +1,9 @@
 const { defineConfig } = require('@vue/cli-service')
 
-let publicPath = 'https://suxiaohei2000.github.io/vxe-table-docs/'
+let publicPath = '/'
 if (process.env.NODE_ENV === 'production') {
-  publicPath = `/vxe-table/v${process.env.VUE_APP_VXE_VERSION}/`
+  // publicPath = `/vxe-table/v${process.env.VUE_APP_VXE_VERSION}/`
+  publicPath = `/vxe-table-docs/`
   if (process.env.npm_lifecycle_event === 'build:main') {
     publicPath = `/v${process.env.VUE_APP_VXE_VERSION}/`
     process.env.VUE_APP_CDN_URL = '/umd/'

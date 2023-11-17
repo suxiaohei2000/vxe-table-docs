@@ -14,6 +14,7 @@ jobs:
 
       - name: Install and Build 🔧               # 第二步：下载依赖和构建
         run: |
+          cd ./v3
           yarn install
           yarn build
 
